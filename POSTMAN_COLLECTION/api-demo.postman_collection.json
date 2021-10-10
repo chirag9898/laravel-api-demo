@@ -26,13 +26,14 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost/api-demo/api/api-login",
+					"raw": "http://laravel-api-demo.pttreat.com/api/api-login",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"laravel-api-demo",
+						"pttreat",
+						"com"
 					],
 					"path": [
-						"api-demo",
 						"api",
 						"api-login"
 					]
@@ -48,7 +49,7 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "5f4f917b6a95f2f88a8f70818adf2ae7d838689108f1b1931054d241a9e1d67bcef833b7381fbb24a6a6cd7fc76dff3a0588",
+						"value": "8a0639560236a3a920740e99c83614b2f2156afdcda5a68fc447e3334518380ee7c8bf38617335ebf3fe86ba876e2d501c1a",
 						"description": "You will get token form api-login response",
 						"type": "text"
 					}
@@ -80,7 +81,7 @@
 						{
 							"key": "avatar",
 							"type": "file",
-							"src": "/C:/Users/webi-1/Desktop/Downloads/Webp.net-resizeimage.jpg"
+							"src": []
 						},
 						{
 							"key": "email",
@@ -90,13 +91,14 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost/api-demo/api/api-profile-update",
+					"raw": "http://laravel-api-demo.pttreat.com/api/api-profile-update",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"laravel-api-demo",
+						"pttreat",
+						"com"
 					],
 					"path": [
-						"api-demo",
 						"api",
 						"api-profile-update"
 					]
