@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "950b7fd3-8f4f-41fa-8f3f-8a0fb5fbee46",
+		"name": "api-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "chirag9898",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api-demo/api/api-login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-demo",
+						"api",
+						"api-login"
+					]
+				},
+				"description": "1) role_tyoe = user\n   user_name : chirag989830\n   password  : 123"
+			},
+			"response": []
+		},
+		{
+			"name": "update-profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "5f4f917b6a95f2f88a8f70818adf2ae7d838689108f1b1931054d241a9e1d67bcef833b7381fbb24a6a6cd7fc76dff3a0588",
+						"description": "You will get token form api-login response",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "You will get user_id form api-login response",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "chirag jogani",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "chirag9898",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/C:/Users/webi-1/Desktop/Downloads/Webp.net-resizeimage.jpg"
+						},
+						{
+							"key": "email",
+							"value": "chiragjogani21@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api-demo/api/api-profile-update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-demo",
+						"api",
+						"api-profile-update"
+					]
+				},
+				"description": "Tu access this API you need token and user_id, you will get both from api-login\n\nget token and pass it on headers of api-profile-update\n\ndo same thing for user_id\n\nvalidation:\nuser_id   => mandatory,numeric,greter than 0\nname      => mandatoy\nuser_name => mandatory,min 4 characters, max 20 characters\npassword  => mandatory\navatar    => not-mandatory, dimension (256px X 256px)\nemail     => mandaroty,valid email"
+			},
+			"response": []
+		}
+	]
+}
